@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flaude｜Claude 导出文档阅读器</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell" aria-label="Flaude">
+      <aside class="sidebar">
+        <div class="brand">
+          <img class="brand-logo" src="./logo.svg" alt="Flaude" />
+          <p id="source-label">未选择文件夹</p>
+        </div>
+
+        <nav class="nav" aria-label="资料类型">
+          <button class="nav-item active" data-view="conversations">
+            <span>对话</span>
+            <strong id="count-conversations">0</strong>
+          </button>
+          <button class="nav-item" data-view="projects">
+            <span>项目</span>
+            <strong id="count-projects">0</strong>
+          </button>
+          <button class="nav-item" data-view="memories">
+            <span>记忆</span>
+            <strong id="count-memories">0</strong>
+          </button>
+          <button class="nav-item" data-view="designChats">
+            <span>设计对话</span>
+            <strong id="count-design">0</strong>
+          </button>
+        </nav>
+
+        <label class="search">
+          <span>搜索</span>
+          <input id="search-input" type="search" placeholder="标题、正文、附件" autocomplete="off" />
+        </label>
+
+        <div class="import-box">
+          <button id="import-folder" type="button">添加文件夹</button>
+          <input id="folder-input" type="file" webkitdirectory directory multiple hidden />
+          <p id="import-status">选择 Claude 导出文件夹后会在本页解析，不上传任何数据。</p>
+        </div>
+
+        <section class="stats" aria-label="总览">
+          <div>
+            <span>消息</span>
+            <strong id="stat-messages">0</strong>
+          </div>
+          <div>
+            <span>附件</span>
+            <strong id="stat-attachments">0</strong>
+          </div>
+        </section>
+      </aside>
+
+      <section class="list-pane">
+        <header class="pane-head">
+          <div>
+            <p id="view-kicker">对话记录</p>
+            <h2 id="view-title">对话</h2>
+          </div>
+          <button id="clear-search" type="button">清空</button>
+        </header>
+        <div id="item-list" class="item-list" aria-live="polite"></div>
+      </section>
+
+      <section class="reader-pane">
+        <article id="reader" class="reader"></article>
+      </section>
+    </main>
+
+    <script src="./claude-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

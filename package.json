@@ -1,0 +1,11 @@
+{
+  "name": "flaude",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-first shelter for reading exported Claude data after account trouble",
+  "scripts": {
+    "start": "python3 -m http.server --directory src/claude_reader 8765",
+    "build:reader": "python3 scripts/build_claude_reader.py",
+    "serve:dist": "python3 -m http.server --directory dist 8765"
+  }
+}
