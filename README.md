@@ -2,7 +2,7 @@
   <img src="./src/claude_reader/logo.svg" alt="Flaude" width="520" />
 </p>
 
-# Flaude｜Claude 导出文档阅读器
+# Flaude｜Claude 导出 <img src="./src/claude_reader/banned-badge.svg" alt="banned" height="34" /> 文档阅读器
 
 一个收留最近被 Claude 封号的伤心人的小工具。
 
