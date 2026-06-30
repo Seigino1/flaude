@@ -2,7 +2,15 @@
   <img src="./src/claude_reader/logo.svg" alt="Flaude" width="520" />
 </p>
 
-# Flaude｜Claude 导出 <img src="./src/claude_reader/banned-badge.svg" alt="banned" height="34" /> 文档阅读器
+# Flaude｜Claude <img src="./src/claude_reader/banned-badge.svg" alt="banned" height="34" /> 导出文档阅读器
+
+<p align="center">
+  <img src="./docs/images/flaude-readme-hero.png" alt="Flaude Claude banned 导出文档阅读器效果图" width="900" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/Seigino1/flaude">github.com/Seigino1/flaude</a>
+</p>
 
 一个收留最近被 Claude 封号的伤心人的小工具。
 
@@ -14,7 +22,7 @@
 
 ## 能做什么
 
-- 选择 Claude 导出文件夹后，在浏览器本地完成解析。
+- 选择 Claude 导出文件夹 (需解压) 后，在浏览器本地完成解析。
 - 查看历史对话、项目、记忆、设计对话和附件内容。
 - 搜索标题、正文、附件和文件名。
 - 快速复制单条消息或整段对话。
